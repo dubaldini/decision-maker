@@ -30,6 +30,7 @@ sm.add_widget(QuestionsScreen(name='questions'))
 
 class MainApp(MDApp):
     def build(self):
+        self.theme_cls.theme_style = "Dark"        
         return Builder.load_string(KV)
 
         # self.theme_cls.primary_palette = 'Green'
