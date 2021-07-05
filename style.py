@@ -4,18 +4,29 @@ ScreenManager:
     QuestionsScreen:
     Question1Screen:
     Question2Screen:
+    Question3Screen:
+    Question4Screen:
+    Question5Screen:
+    Question6Screen:    
+    Question7Screen:    
 
 <MenuScreen>:
     name: 'menu'
+
+
+    MDLabel:
+        text: 'Welcome to Baldos Decision Maker App!'
+        halign: 'center'
+
     MDRectangleFlatButton:
-        text: 'Menu Screen'
-        pos_hint: {'center_x':0.5, 'center_y':0.5}
+        text: 'Click Here to Access the Questions'
+        pos_hint: {'center_x':0.50, 'center_y':0.25}
         on_press: root.manager.current = 'questions'
 
 <QuestionsScreen>:
     name: 'questions'
     MDLabel:
-        text:  'Hello, Baldo'
+        text:  'Prepare for the following questions...'
         halign: 'center'
 
 
@@ -49,7 +60,170 @@ ScreenManager:
 <Question2Screen>:
     name: 'question2'
     MDLabel:
-        text:  'Uma situação igual ou parecida a essa já aconteceu no passado? Avalie como foi de ótima a péssima.'
+        text:  'questao2'
+        halign: 'center'
+         
+
+    MDRectangleFlatButton:
+        text: 'Ótima'
+        pos_hint: {'center_x':0.20, 'center_y':0.2}
+        on_press: root.manager.current = 'question3'
+
+    MDRectangleFlatButton:
+        text: 'Boa'
+        pos_hint: {'center_x':0.35, 'center_y':0.2}
+        on_press: root.manager.current = 'question3'
+
+    MDRectangleFlatButton:
+        text: 'Média'
+        pos_hint: {'center_x':0.50, 'center_y':0.2}
+        on_press: root.manager.current = 'question3'
+
+    MDRectangleFlatButton:
+        text: 'Ruim'
+        pos_hint: {'center_x':0.65, 'center_y':0.2}
+        on_press: root.manager.current = 'question3'
+    
+    MDRectangleFlatButton:
+        text: 'Péssima'
+        pos_hint: {'center_x':0.80, 'center_y':0.2}
+        on_press: root.manager.current = 'question3'
+
+<Question3Screen>:
+    name: 'question3'
+    MDLabel:
+        text:  'questao3'
+        halign: 'center'
+         
+
+    MDRectangleFlatButton:
+        text: 'Ótima'
+        pos_hint: {'center_x':0.20, 'center_y':0.2}
+        on_press: root.manager.current = 'question4'
+
+    MDRectangleFlatButton:
+        text: 'Boa'
+        pos_hint: {'center_x':0.35, 'center_y':0.2}
+        on_press: root.manager.current = 'question4'
+
+    MDRectangleFlatButton:
+        text: 'Média'
+        pos_hint: {'center_x':0.50, 'center_y':0.2}
+        on_press: root.manager.current = 'question4'
+
+    MDRectangleFlatButton:
+        text: 'Ruim'
+        pos_hint: {'center_x':0.65, 'center_y':0.2}
+        on_press: root.manager.current = 'question4'
+    
+    MDRectangleFlatButton:
+        text: 'Péssima'
+        pos_hint: {'center_x':0.80, 'center_y':0.2}
+        on_press: root.manager.current = 'question4'
+
+
+<Question4Screen>:
+    name: 'question4'
+    MDLabel:
+        text:  'questao 4'
+        halign: 'center'
+         
+
+    MDRectangleFlatButton:
+        text: 'Ótima'
+        pos_hint: {'center_x':0.20, 'center_y':0.2}
+        on_press: root.manager.current = 'question5'
+
+    MDRectangleFlatButton:
+        text: 'Boa'
+        pos_hint: {'center_x':0.35, 'center_y':0.2}
+        on_press: root.manager.current = 'question5'
+
+    MDRectangleFlatButton:
+        text: 'Média'
+        pos_hint: {'center_x':0.50, 'center_y':0.2}
+        on_press: root.manager.current = 'question5'
+
+    MDRectangleFlatButton:
+        text: 'Ruim'
+        pos_hint: {'center_x':0.65, 'center_y':0.2}
+        on_press: root.manager.current = 'question5'
+    
+    MDRectangleFlatButton:
+        text: 'Péssima'
+        pos_hint: {'center_x':0.80, 'center_y':0.2}
+        on_press: root.manager.current = 'question5'
+
+
+<Question5Screen>:
+    name: 'question5'
+    MDLabel:
+        text:  'questao 5'
+        halign: 'center'
+         
+
+    MDRectangleFlatButton:
+        text: 'Ótima'
+        pos_hint: {'center_x':0.20, 'center_y':0.2}
+        on_press: root.manager.current = 'question6'
+
+    MDRectangleFlatButton:
+        text: 'Boa'
+        pos_hint: {'center_x':0.35, 'center_y':0.2}
+        on_press: root.manager.current = 'question6'
+
+    MDRectangleFlatButton:
+        text: 'Média'
+        pos_hint: {'center_x':0.50, 'center_y':0.2}
+        on_press: root.manager.current = 'question6'
+
+    MDRectangleFlatButton:
+        text: 'Ruim'
+        pos_hint: {'center_x':0.65, 'center_y':0.2}
+        on_press: root.manager.current = 'question6'
+    
+    MDRectangleFlatButton:
+        text: 'Péssima'
+        pos_hint: {'center_x':0.80, 'center_y':0.2}
+        on_press: root.manager.current = 'question6'
+
+
+<Question6Screen>:
+    name: 'question6'
+    MDLabel:
+        text:  'questao 6'
+        halign: 'center'
+         
+
+    MDRectangleFlatButton:
+        text: 'Ótima'
+        pos_hint: {'center_x':0.20, 'center_y':0.2}
+        on_press: root.manager.current = 'question7'
+
+    MDRectangleFlatButton:
+        text: 'Boa'
+        pos_hint: {'center_x':0.35, 'center_y':0.2}
+        on_press: root.manager.current = 'question7'
+
+    MDRectangleFlatButton:
+        text: 'Média'
+        pos_hint: {'center_x':0.50, 'center_y':0.2}
+        on_press: root.manager.current = 'question7'
+
+    MDRectangleFlatButton:
+        text: 'Ruim'
+        pos_hint: {'center_x':0.65, 'center_y':0.2}
+        on_press: root.manager.current = 'question7'
+    
+    MDRectangleFlatButton:
+        text: 'Péssima'
+        pos_hint: {'center_x':0.80, 'center_y':0.2}
+        on_press: root.manager.current = 'question7'
+
+<Question7Screen>:
+    name: 'question7'
+    MDLabel:
+        text:  'questao 7'
         halign: 'center'
          
 
@@ -77,11 +251,5 @@ ScreenManager:
         text: 'Péssima'
         pos_hint: {'center_x':0.80, 'center_y':0.2}
         on_press: root.manager.current = 'menu'
-
-<Question3Screen>:
-    name: 'question3'
-    MDLabel:
-        text:  
-        halign: 'center'
 
 '''
