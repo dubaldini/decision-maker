@@ -24,13 +24,24 @@ class MenuScreen(Screen):
 class QuestionsScreen(Screen):
     pass
 
+class Question1Screen(Screen):
+    pass
+
+class Question2Screen(Screen):
+    pass
+
 sm = ScreenManager()
 sm.add_widget(MenuScreen(name='menu'))
 sm.add_widget(QuestionsScreen(name='questions'))
+sm.add_widget(Question1Screen(name='question1'))
+sm.add_widget(Question2Screen(name='question2'))
+
 
 class MainApp(MDApp):
     def build(self):
-        self.theme_cls.theme_style = "Dark"        
+        #self.theme_cls.theme_style = "Dark"       
+        self.theme_cls.primary_palette = "Green"  # "Purple", "Red"
+        self.theme_cls.primary_hue = "200"  # "500" 
         return Builder.load_string(KV)
 
         # self.theme_cls.primary_palette = 'Green'
