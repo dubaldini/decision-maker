@@ -46,6 +46,12 @@ class Question6Screen(Screen):
 class Question7Screen(Screen):
     pass   
 
+class RulesScreen2(Screen):
+    pass
+
+class ResultsScreen(Screen):
+    pass
+
 sm = ScreenManager()
 sm.add_widget(MenuScreen(name='menu'))
 sm.add_widget(QuestionsScreen(name='questions'))
@@ -56,7 +62,8 @@ sm.add_widget(Question4Screen(name='question4'))
 sm.add_widget(Question5Screen(name='question5'))
 sm.add_widget(Question6Screen(name='question6'))
 sm.add_widget(Question7Screen(name='question7'))
-
+sm.add_widget(RulesScreen2(name='rules2'))
+sm.add_widget(ResultsScreen(name='results'))
 
 class MainApp(MDApp):
 

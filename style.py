@@ -8,7 +8,9 @@ ScreenManager:
     Question4Screen:
     Question5Screen:
     Question6Screen:    
-    Question7Screen:    
+    Question7Screen:  
+    RulesScreen2:
+    ResultsScreen:  
 
 <MenuScreen>:
     name: 'menu'
@@ -230,26 +232,48 @@ ScreenManager:
     MDRectangleFlatButton:
         text: 'Ótima'
         pos_hint: {'center_x':0.20, 'center_y':0.2}
-        on_press: root.manager.current = 'menu'
+        on_press: root.manager.current = 'rules2'
 
     MDRectangleFlatButton:
         text: 'Boa'
         pos_hint: {'center_x':0.35, 'center_y':0.2}
-        on_press: root.manager.current = 'menu'
+        on_press: root.manager.current = 'rules2'
 
     MDRectangleFlatButton:
         text: 'Média'
         pos_hint: {'center_x':0.50, 'center_y':0.2}
-        on_press: root.manager.current = 'menu'
+        on_press: root.manager.current = 'rules2'
 
     MDRectangleFlatButton:
         text: 'Ruim'
         pos_hint: {'center_x':0.65, 'center_y':0.2}
-        on_press: root.manager.current = 'menu'
+        on_press: root.manager.current = 'rules2'
     
     MDRectangleFlatButton:
         text: 'Péssima'
         pos_hint: {'center_x':0.80, 'center_y':0.2}
+        on_press: root.manager.current = 'rules2'
+
+<RulesScreen2>:
+    name: 'rules2'
+    MDLabel:
+        text:  'rules2'
+        halign: 'center'
+
+    MDRectangleFlatButton:
+        text: 'Obtenha seu resultado'
+        pos_hint: {'center_x':0.50, 'center_y':0.2}
+        on_press: root.manager.current = 'results'
+
+<ResultsScreen>:
+    name: 'results'
+    MDLabel:
+        text:  'results'
+        halign: 'center'
+
+    MDRectangleFlatButton:
+        text: 'Voltar para o menu'
+        pos_hint: {'center_x':0.50, 'center_y':0.2}
         on_press: root.manager.current = 'menu'
 
 '''
